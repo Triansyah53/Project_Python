@@ -4,8 +4,8 @@ from woocommerce import API
 
 wcapi = API(
     url="http://mystore.local/",
-    consumer_key="ck_9a8d25d9727c105ccce0c7d13178f058bbd39a6d",
-    consumer_secret="cs_1e16ff2b740969b57a792b0fc15fc79590ba55b3",
+    consumer_key="ck_16581c7ecdceacada4fbd90eff1ae185482edcf9",
+    consumer_secret="cs_4e0b376a9d180fb2d8862387a1aae73df92827a8",
     version="wc/v3"
 )
 
