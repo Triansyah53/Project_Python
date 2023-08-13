@@ -13,16 +13,16 @@ if place_holder != "Search products…":
 else:
     print("PASS")
     
-# Example (see which tab is selected)
-# first click on my account
-# my_cct = driver.find_element('css selector', 'li.page-item-9')
-# my_cct.click()
-#
-# nav_items = driver.find_elements('css selector', 'ul.nav-menu li')
-# for item in nav_items:
-#     item_class = item.get_attribute('class')
-#     if 'current_page_item' in item_class:
-#         print("The selected tab is: {}".format(item.text))
+Example (see which tab is selected)
+first click on my account
+my_cct = driver.find_element('css selector', 'li.page-item-9')
+my_cct.click()
+
+nav_items = driver.find_elements('css selector', 'ul.nav-menu li')
+for item in nav_items:
+    item_class = item.get_attribute('class')
+    if 'current_page_item' in item_class:
+        print("The selected tab is: {}".format(item.text))
 
 #Example (get link url)
 product_link = driver.find_element('css selector', 'li.product a')
