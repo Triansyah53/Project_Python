@@ -4,7 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 def login(driver):
-    driver.get('http://s8.asyx.com')
+    driver.get('https://s8.asyx.com')
     wait = WebDriverWait(driver, 10)
 #asyxdummy
 #asyxsupport
@@ -14,8 +14,3 @@ def login(driver):
     documents_link = wait.until(
         EC.presence_of_element_located((By.PARTIAL_LINK_TEXT, 'Documents'))
     )
-
-    if documents_link.is_displayed():
-        print("Login Success")
-    else:
-        print("Login Failed")
