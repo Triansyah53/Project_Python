@@ -72,7 +72,12 @@
 # 'a[title*="shopping"]'
 # 'a[title$="cart"]'
 
+$x('//div[contains(@class,"col-12")]')
+$X('//div[contains(text(), "Type to Select")]')
 
+$x('//a[contains(@href,"lost")]')
+$x('//a[contains(text(),"Lost")]')
 
+$x('//div[2]/div/div[2]/label/span')
 #######  exclude selector #######
 ## $$('li.product:not(.product-type-variable)')

@@ -4,7 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 def login(driver):
-    driver.get('https://s8.asyx.com')
+    driver.get('https://id2.asyx.com')
     wait = WebDriverWait(driver, 10)
 #asyxdummy
 #asyxsupport
