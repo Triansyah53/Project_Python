@@ -1,4 +1,4 @@
-from Login import login
+from Test_Login import login
 from WebDriverManager import create_driver
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
