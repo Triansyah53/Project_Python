@@ -4,7 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from WebDriverManager import create_driver
 import time
-from Test_Login import login
+from Test_Login import test_login
 import pytest
 
 pytestmark=pytest.mark.program
@@ -12,7 +12,7 @@ pytestmark=pytest.mark.program
 def test_program():
     try:
         driver = create_driver()
-        login(driver)
+        test_login(driver)
         wait=WebDriverWait(driver,3)
 
         # Find the dosctore element and type "PT AGRINDO"
@@ -78,7 +78,8 @@ def test_program():
         da_dgc=driver.find_element(By.CSS_SELECTOR,'[name="despatchGoodsConfirmation"]+span.switch-slider').click()
         da_invenc=driver.find_element(By.CSS_SELECTOR,'[name="despatchAdviceInventoryChecking"]+span.switch-slider').click()
         da_sig=driver.find_element(By.CSS_SELECTOR,'[name="activated"]+span.switch-slider').click()
-        da_addsig=driver.find_element(By.CSS_SELECTOR,'button.btn.btn-primary.btn-sm').click()
+        da_addsig=driver.find_element(By.CSS_SELECTOR,'button.btn.btn-primary.btn-sm')
+        da_addsig.click()
         da_addsig.click()
         da_logo=driver.find_element(By.ID,'react-select-6-input').send_keys('supp',Keys.ENTER)
         da_tesxtsig=driver.find_element(By.CSS_SELECTOR,'td input.form-control[type="text"][name="name"]').send_keys('Sender',Keys.TAB,Keys.TAB,'Receiver')
